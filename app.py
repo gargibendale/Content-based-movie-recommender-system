@@ -23,7 +23,7 @@ def fetch_poster(movie_id):
 movie_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movie_dict)
 similarity_data = bz2.BZ2File('similarity.pbz2', 'rb')
-similarity = pickle.load(similarity_data)
+similarity = pickle.loads(similarity_data)
 
 st.title('Movie Recommender System')
 
