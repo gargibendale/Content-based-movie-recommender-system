@@ -1,5 +1,5 @@
 streamlit
 pandas
-pickle4
+pickle
 requests
 bz2file
